@@ -1,0 +1,309 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 10px auto;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.form {
+    display: block;
+}
+
+.form-section {
+    display: block;
+}
+
+.form-section a {
+    text-decoration: none;
+}
+
+.form-block {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 150px;
+    max-width: 50%;
+    border: solid thin #ccc;
+    justify-content: space-between;
+    margin: 0 15px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+}
+
+.form-block.create {
+    height: 100px;
+    max-width: 150px;
+}
+
+.form-block:hover {
+    border: solid thin #000;
+    cursor: pointer;
+}
+
+.form-block .x,
+.form-block .y {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: slateblue;
+}
+
+.form-block .x {
+    width: 30px;
+    height: 8px;
+}
+
+.form-block .y {
+    height: 30px;
+    width: 8px;
+}
+
+.form-allbutton {
+    padding-top: 20px;
+}
+
+.form-allbutton button {
+    margin: 10px;
+}
+
+.form-name {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.form-delete {
+    transition: all ease-in 0.3s;
+}
+
+.form-userresponse {
+    transition: all ease-in-out 0.5s;
+}
+
+.form-userresponses {
+    transition: all ease-in-out 0.5s;
+}
+
+.form-block:hover .form-userresponses,
+.form-block:hover .form-userresponse,
+.form-block:hover .form-delete {
+    bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex button {
+    float: right;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: slateblue;
+    border: none;
+    letter-spacing: 0.75px;
+}
+
+button:hover {
+    background-color: #423691;
+}
+
+input[type='text'],
+textarea,
+select {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border: solid thin #ccc;
+    box-sizing: border-box;
+}
+
+input {
+    height: 50px;
+    line-height: 50px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-heading input {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form-header div {
+    margin-bottom: 20px;
+}
+
+.round-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.round-button.small {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #b93434;
+    float: none;
+}
+
+.secondary-button {
+    background-color: #e5e5e5;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.secondary-button:hover {
+    background-color: #c7c7c7;
+    color: #000000;
+}
+
+.form-create {
+    padding-bottom: 20px;
+}
+
+.form-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: solid thin #ccc;
+    background-color: #fff;
+}
+
+.form-select-question-type {
+    margin-left: 20px;
+    min-width: 200px;
+}
+
+.form-option {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.form-option-block {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-option input {
+    max-width: 300px;
+    margin: 10px 0;
+    margin-right: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.form-option-more {
+    margin-top: 20px;
+}
+
+.form-select-question-delete {
+    margin: 30px 0 0;
+    padding-top: 20px;
+    border-top: solid thin #e5e5e5;
+}
+
+.form-select-question-delete button {
+    background-color: #b93434;
+}
+
+.noform {
+    border: solid thin #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.option-block input {
+    height: auto;
+    margin: 0;
+
+}
+
+.option-block label {
+    font-weight: normal;
+}
+
+.response-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.response-item {
+    margin-bottom: 20px;
+}
+
+.response-item strong {
+    font-size: 14px;
+}
+
+.response-count {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    color: #fff;
+    font-weight: 500;
+    font-style: 16px;
+}
+
+.response-answer {
+    padding: 10px;
+    background-color: #efefef;
+    margin-top: 5px;
+    line-height: 20px;
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Choose the target JavaScript version (e.g., ES5, ES6)
+    "module": "ESNext", // Module system to use (ESNext is good for modern bundlers)
+    "outDir": "./dist", // Directory to place compiled JavaScript files
+    "allowJs": true, // Allow JavaScript files to be compiled by TypeScript
+    "checkJs": true, // Enable type checking for JavaScript files (optional)
+    "strict": true, // Enable strict type-checking options
+    "lib": [
+      "es2021",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ], // Specify which files to include (use the 'src' folder)
+  "exclude": [
+    "node_modules"
+  ] // Exclude node_modules folder
+}

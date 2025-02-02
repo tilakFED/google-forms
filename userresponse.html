@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms - User Response</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="flex">
+                <h1 class="flex">Add Form Details</h1>
+                <div>
+                    <button onclick="userResponse.cancel()" class="secondary-button" id="cancel">BACK</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="form-create">
+                <!-- All the question will be added in this container -->
+                <div id="form-container"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script type="module" src="dist/response/userResponse.js"></script>
+
+</html>
